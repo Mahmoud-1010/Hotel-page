@@ -1,0 +1,881 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+}
+
+
+header {
+    overflow: hidden;
+    padding: 0 3% 10px;
+}
+
+.toprow {
+    margin: 10px 0;
+    padding: 0 9% 0 6%;
+    overflow: hidden;
+    clear: both;
+
+}
+
+.toprow p {
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.6);
+    float: left;
+}
+
+.box {
+    position: relative;
+    float: right;
+    transition: all 0.28s ease-in-out;
+    margin-left: 15px;
+}
+
+.box select {
+    text-align: left;
+    color: rgb(0, 0, 0, 01);
+    margin-right: 1;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    -webkit-appearance: none;
+    opacity: 0.5;
+    padding: 0 20px 0 10px;
+
+}
+
+.box:after {
+    transition: 0.28s ease-in-out;
+    content: '';
+    border: 2px solid;
+    border-color: transparent #6c6b6a #6c6b6a transparent;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+    width: 2px;
+    height: 2px;
+    transform: translate(-50%, -50%);
+    transform: rotate(45deg);
+
+
+}
+
+.box:focus-within:after {
+    top: 30%;
+    transform: rotate(-135deg);
+
+
+}
+
+
+hr {
+    outline: none;
+
+    width: 88%;
+    height: 1px;
+    margin: auto;
+    background-color: #f1f0f0;
+    border: none;
+    clear: both;
+}
+
+.st img {
+
+    width: 97%;
+    height: 97%;
+}
+
+.left {
+    float: left;
+}
+
+nav {
+    box-shadow: 0 1.5px 4px -2px gray;
+
+}
+
+.sto {
+    position: absolute;
+    top: 43%;
+    width: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.st {
+
+    width: 100%;
+    box-sizing: border-box;
+    overflow: visible;
+    height: 80px;
+    padding: 0px 0 17px;
+    background: white;
+    transition: all 300ms linear;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.right {
+    float: right;
+    position: absolute;
+    right: 0;
+
+}
+
+ul .home {
+    color: #007bff
+}
+
+.f {
+    height: 65px;
+    transition: 0.6s;
+    text-transform: uppercase;
+    color: #222;
+    font: bold 12px/30px "Roboto", sans-serif;
+    margin-right: 35px;
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    text-shadow: 1px 1px 100px rgb(0, 0, 0, 0.5);
+    padding: 10px 10px;
+    font-size: 12.5px;
+
+}
+
+.faw {
+    box-shadow: 0 3px 16px 0 rgba(0, 0, 0, .1);
+
+}
+
+.f:hover {
+    color: #007bff;
+
+}
+
+.dob:hover {
+
+    color: white;
+    background: #007bff
+}
+
+
+.f ul {
+
+    position: absolute;
+    text-align: left;
+    width: 260px;
+    transition: all 300ms linear 0s;
+    top: 100%;
+    list-style: none;
+    clear: both;
+    display: none;
+    float: none;
+    background: white;
+
+}
+
+
+.dob {
+    transition: all 300ms linear;
+    padding: 17px;
+    left: 10;
+    border-bottom: 0.5px solid rgb(0, 0, 0, 0.1);
+}
+
+.fw:hover .faw {
+    transition: all 300ms linear 0s;
+    display: block;
+    color: #222;
+    animation-name: anime;
+    animation-duration: 250ms;
+    animation-iteration-count: 1;
+
+
+}
+
+.faw:hover {
+    transition: all 300ms linear 0s;
+    display: block;
+
+    animation-name: anime;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+
+
+}
+
+@keyframes anime {
+    0% {
+        top: 160%;
+    }
+
+    25% {
+        top: 145%;
+    }
+
+    50% {
+        top: 130%;
+    }
+
+    75% {
+        top: 115%;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+
+.first {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.15)), url(../images/home-banner.jpg) no-repeat scroll center center;
+    padding: 120px 0 150px;
+    height: 750px;
+    position: relative;
+    color: white;
+    background-attachment: rgb(0, 0, 0, .7);
+    background-repeat: no-repeat;
+}
+
+.abs {
+    text-align: center;
+    position: relative;
+    top: 55%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    background-color: white;
+}
+
+.first h1 {
+    position: relative;
+    color: white;
+    font-family: playfair display, serif;
+    font-size: 120px;
+    display: inline;
+}
+
+.first h1 sup {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.first .p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 50px;
+    font-family: roboto, sans-serif;
+
+}
+
+.play .cent {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.play {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    color: white;
+    width: 60px;
+    height: 60px;
+    background: #007bff;
+    border-radius: 50%;
+
+}
+
+.sec {
+    position: relative;
+}
+
+.trans {
+    position: relative;
+    box-shadow: 1px 1px 15px rgb(0, 0, 0, 0.4);
+    display: flex;
+    height: 150px;
+    background: white;
+    width: 80%;
+    margin: auto;
+    transform: translatey(-55%)
+}
+
+.trans .fe {
+    padding: 25px;
+    box-sizing: content-box;
+
+    width: 25%;
+
+}
+
+.border {
+    border-right: 1px solid #ddd;
+}
+
+.check {
+    font-family: roboto, sans-serif;
+    font-weight: 500;
+    color: #777;
+    font-size: 14px;
+}
+
+.fe span {
+    font-family: playfair display, serif;
+
+    font-weight: 600;
+    font-size: 60px;
+
+}
+
+.fe input {
+    width: 40%;
+    color: transparent;
+    box-sizing: border-box;
+    height: 30px;
+    font-size: 20px;
+    position: relative;
+    background: transparent;
+    border: none;
+}
+
+.fe input:before {
+    content: 'TH SEP';
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-family: playfair display, serif;
+    color: black;
+}
+
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+button {
+    outline: none;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 15px 35px;
+    color: white;
+    border: 1px solid #4d8eff;
+    background-color: #4d8eff;
+    font-size: 14px;
+    font-weight: 550;
+    transition: all 300ms linear;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background: white;
+    color: #4d8eff;
+}
+
+
+.sec .cent {
+    text-align: center;
+    margin: 100px auto 300px;
+
+
+}
+
+.sec .cent p {
+    color: #777;
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+
+}
+
+.sec .cent h1 {
+    font-family: "Playfair Display";
+    font-size: 60px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+
+}
+
+.sec .wid {
+    margin: 25px auto;
+    width: 60%;
+
+}
+
+.cent button {
+    text-transform: none;
+
+}
+
+.three {
+    background: #f1f9ff;
+    text-align: center;
+}
+
+.three img {
+    transform: translatey(-45%);
+    cursor: pointer;
+}
+
+.room p {
+    color: #777;
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+
+}
+
+.room h1 {
+    font-family: playfair display, serif;
+    margin: 35px 0;
+
+    font-size: 60px;
+    font-weight: 700;
+    color: #222;
+}
+
+.room {
+    padding-bottom: 150px;
+    line-height: 2em;
+}
+
+.im img {
+    width: 100%;
+
+}
+
+.im {
+    float: left;
+    width: 50%;
+}
+
+.four {
+    overflow: hidden;
+
+    padding: 25px 0;
+    position: relative;
+}
+
+.anime {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    padding: 2% 0;
+    width: 100%;
+    left: 50%;
+    display: flex;
+    animation-name: ro;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-outs;
+
+}
+
+
+@keyframes ro {
+    0% {
+        left: 50%;
+    }
+
+    10% {
+
+        left: 0%;
+
+    }
+
+    60% {
+
+        left: 0%;
+
+    }
+
+    67.5% {
+        left: 50%;
+
+    }
+
+    100% {
+        left: 50%;
+
+    }
+}
+
+
+
+
+
+
+.anime .col {
+    padding-left: 2%;
+}
+
+.mon {
+    color: #4d8eff;
+    font-family: roboto, sans-serif;
+    font-size: 36px;
+}
+
+.mon sub {
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.type {
+    font-family: playfair display, serif;
+    font-size: 36px;
+    padding: 15px 0;
+}
+
+.paq {
+    line-height: 27px;
+    font-weight: 600;
+    color: #777;
+    width: 60%;
+}
+
+.row {
+    font-weight: 600;
+    color: #777;
+    padding: 25px 0 0 0;
+    display: flex;
+}
+
+.row ul {
+    list-style: none;
+}
+
+.row div {
+    width: 50%;
+}
+
+.row li {
+    margin-top: 15px;
+}
+
+.row li .ar {
+    font-family: linearicons-free;
+    display: inline-block;
+    margin-left: -6px;
+    width: 28px;
+    font-weight: 100;
+    color: #4d8eff;
+}
+
+.five {
+    background-color: #f1f9ff;
+    color: #777;
+    font-size: 16px;
+    font-family: roboto, sans-serif;
+    padding: 10% 0;
+
+
+}
+
+.five .cin {
+    margin: auto;
+    width: 80%;
+    background: white;
+    text-align: center;
+}
+
+
+.cin span {
+    transform: translateY(-50%);
+    display: block;
+    color: #4d8eff;
+    font-size: 3em;
+    font-weight: 200;
+    text-shadow: 10px 20px 15px rgb(0, 0, 0, 0.5);
+}
+
+.five h4 {
+
+    color: black;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: arial;
+    margin: 20px 0 30px;
+}
+
+.cin .stars {
+    color: gold;
+    font-size: 0.8em;
+    margin-bottom: 40px;
+}
+
+.cin p {
+    margin: auto;
+    font-style: italic;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+/**
+
+radius
+
+**/
+
+.pictures {
+    transform: translateY(50%);
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+
+.pictures img:hover {
+    opacity: 0.15;
+
+}
+
+.pictures img {
+    transition: all 300ms linear;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.radius {
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.radius:hover {
+    background: #4d8eff;
+}
+
+.flx {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    transition: all 300ms linear;
+
+
+}
+
+.overflow {
+    color: #777;
+    margin-right: 3%;
+    width: 33%;
+    cursor: pointer;
+
+}
+
+.overflow button {
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 16px;
+    margin: 0;
+}
+
+.lef {
+    float: left;
+}
+
+.rig {
+    float: right;
+}
+
+.imm {
+    overflow: hidden;
+    transition: all 300ms linear;
+
+
+}
+
+.imm img {
+    transition: all 300ms linear;
+
+}
+
+.floaa {
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.rig div {
+    margin-left: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline;
+}
+
+.overflow h1 {
+
+    font-size: 21px;
+    font-weight: 600;
+    color: #222;
+
+    font-family: playfair display, serif;
+    transition: all 300ms linear;
+
+}
+
+.prag p {
+    margin-top: 20px;
+    line-height: 26px;
+
+
+}
+
+.overflow:hover h1 {
+    color: #4d8eff;
+    transition: all 300ms linear;
+
+}
+
+.overflow:hover img {
+
+    transform: scale(1.15, 1.15);
+    transition: all 300ms linear;
+
+}
+
+.vol7{  
+    padding: 100px 0;
+      transition: all 300ms linear;
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../images/footer-bg.jpg) no-repeat center;
+}
+.ro1{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    
+}
+.dflex{
+    margin: auto;
+    width: 24%;
+    color: #777;
+    line-height: 25px;
+}
+.dflex p{
+    width: 85%;
+}
+.dflex h6{
+    
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.rowww{
+    flex-wrap: wrap;
+    display: flex;
+         color: #777;
+
+}
+.rowww ul {
+width: 50%;
+    list-style: none;
+         color: #777;
+
+}
+.rowww li{
+    text-decoration: none;
+
+}
+.rowww li a{
+        text-decoration: none;
+         color: #777;
+
+}
+.ro2{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    color: #777;
+    margin-top: 100px;
+}
+
+
+.dflex a:hover{
+    color: white;
+}
+
+.footer2 span{
+    color: #4d8eff
+} 
+
+.socf{
+    width: 10%;
+}
+.vol7 a{
+        transition: all 300ms linear;
+
+}
+.socf a{
+    margin-left: 8px;
+    color: #777;
+    text-decoration: none;
+}
+.socf a:hover{
+    
+    color:  #4d8eff;
+    
+}
+.emb button{
+    outline: none;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    margin-top: 0px;
+    width: 30px;
+    color: white;
+    background-color: #4d8eff;
+    transition: all 300ms linear;
+    text-transform: uppercase;
+        padding: 8.5px 0;
+
+
+    }
+.embtu{
+    border: 1px solid #777;
+    background-color: transparent;
+    color: white;
+    outline: 0;
+    padding: 8px 3px;
+    margin:0;
+}
+.embtu:focus{
+        border: 1px solid #4d8eff;
+    background-color: rgb(77,157,255,0.1);
+
+    
+}
+.emb{display: flex;
+margin-top: 20px}
+
+.pointe{
+    cursor: pointer;
+}
